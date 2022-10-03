@@ -1,0 +1,82 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.ProvenSpeedUpComponent {
+  .Polaris-Card {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  &__container-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__reviews {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item-review {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  &__item-review--red {
+    background-color: $color-light-red;
+  }
+  &__item-review--white {
+    background-color: $color-white-1;
+  }
+  &__item-review--blue {
+    background-color: $color-light-blue-1;
+  }
+  &__item-review--red-1 {
+    background-color: $color-light-red-1;
+  }
+
+  &__app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  &__app-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__number {
+    font-weight: 600;
+    font-size: 28px;
+  }
+  &__number--yellow {
+    color: $color-yellow;
+  }
+  &__number--blue {
+    color: $color-light-blue;
+  }
+
+  &__container-left {
+    flex: 1;
+    .Polaris-Text--root{
+      margin-top: 4px;
+      margin-bottom: 12px;
+    }
+  }
+
+
+
+  &__achievement{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+}

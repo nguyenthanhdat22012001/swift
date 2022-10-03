@@ -1,0 +1,33 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+
+.OneExpertPage{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__question{
+        color: $color-gray;
+        font-size: 12px;
+        position: relative;
+        margin-bottom: 12px;
+        margin-left: 8px;
+        &::before{
+          position: absolute;
+          content: "";
+          top: 0;
+          left: -8px;
+          width: 4px;
+          height: 100%;
+          background-color: $color-blue;
+          border-radius: 0px 8px 8px 0px;
+        }
+      }
+}
+
+.Polaris-Heading {
+    font-size: 26px;
+    color: $color-dark-blue;
+    font-weight: 500;
+  }

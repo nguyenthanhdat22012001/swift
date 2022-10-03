@@ -1,0 +1,31 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.BannerComponet {
+  .Polaris-Card {
+    display: flex;
+    padding: 20px 0;
+  }
+
+  &__right {
+    flex: 1;
+    @include flex_xy(center, center);
+    flex-direction: column;
+  }
+  &__image-logo {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    width: 431px;
+    color: $color-gray;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  .Polaris-Button--primary {
+    background-color: $color-blue;
+  }
+}
